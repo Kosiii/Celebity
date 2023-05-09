@@ -3,55 +3,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CelebrityGuessingGame {
-    private ArrayList<Celebrity> celebrities;
-    private int numMisses;
-    private int maxMisses;
-
-    public CelebrityGuessingGame() {
-        this.celebrities = new ArrayList<>();
-        this.numMisses = 0;
-        this.maxMisses = 5;
-    }
-
-    public void addCelebrity(Celebrity celebrity) {
-        this.celebrities.add(celebrity);
-    }
-
-    public void printTraits(Celebrity celebrity) {
-        System.out.println("Traits of " + celebrity.getName() + ":");
-        System.out.println("Hair color: " + celebrity.getHairColor());
-        System.out.println("Profession: " + celebrity.getProfession());
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class CelebrityGuessingGame {
-
-    public static ArrayList<Celebrity> celebrities = new ArrayList<Celebrity>();
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class CelebrityGuessingGame {
-
-    public static ArrayList<Celebrity> celebrities = new ArrayList<Celebrity>();
-
-    public static void addCelebrity(Celebrity c) {
-        celebrities.add(c);
-    }
-
-    public static void printCelebrityTraits(Celebrity c) {
-        System.out.println("Name: " + c.getName());
-        System.out.println("Hair Color: " + c.getHairColor());
-        System.out.println("Profession: " + c.getProfession());
-        System.out.println("Age: " + c.getAge());
-        System.out.println("Nationality: " + c.getNationality());
-    }
-
-    public static boolean isGuessCorrect(Celebrity c, String guess) {
-        return guess.equalsIgnoreCase(c.getName());
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class CelebrityGuessingGame {
 
     public static ArrayList<Celebrity> celebrities = new ArrayList<Celebrity>();
 
@@ -77,29 +28,26 @@ public class CelebrityGuessingGame {
     }
 
     public static void main(String[] args) {
-        // Instantiate 10 different celebrity objects
-        Celebrity c1 = new Celebrity("Angelina Jolie", "brunette", "actress", 46, "American");
-        Celebrity c2 = new Celebrity("Beyonce", "blonde", "singer", 40, "American");
-        Celebrity c3 = new Celebrity("Leonardo DiCaprio", "blonde", "actor", 47, "American");
-        Celebrity c4 = new Celebrity("Scarlett Johansson", "blonde", "actress", 37, "American");
-        Celebrity c5 = new Celebrity("David Beckham", "brown", "soccer player", 46, "English");
-        Celebrity c6 = new Celebrity("Emma Watson", "brown", "actress", 31, "British");
-        Celebrity c7 = new Celebrity("Drake", "black", "rapper", 35, "Canadian");
-        Celebrity c8 = new Celebrity("Rihanna", "black", "singer", 33, "Barbadian");
-        Celebrity c9 = new Celebrity("Cristiano Ronaldo", "brown", "soccer player", 36, "Portuguese");
-        Celebrity c10 = new Celebrity("Kylie Jenner", "blonde", "businesswoman", 24, "American");
+        
+      Celebrity Lebron = new Celebrity("male", 38,"6foot8inches", 250, "Basketballplayer", "LBJ", "black", "Black");
+            Celebrity Zion = new Celebrity("male", 22, "6foot6inches", 270, "Basketballplayer", "ZW", "black", "Black");
+            Celebrity Ja_Morant = new Celebrity("male",23,"6foot2inches", 183, "Basketballplayer", "JM","black", "Black");
+            Celebrity Micheal_B_Jordan = new Celebrity("male",35, "5foot11inches", 175, "Actor", "MJ","black", "Black");
+            Celebrity Lil_Uzi_Vert = new Celebrity("male", 38, "5foot4inches", 150, "Rapper", "LUV", "Red", "Black" );
+            Celebrity Chris_Pratt = new Celebrity("male", 43, "6foot2inches", 185, "Actor", "CP", "blonde", "White");
+            Celebrity DrPhill = new Celebrity("male",72, "6foot3inches", 173, "Media_Personality", "DP", "grey","White");
+            Celebrity Taylor_Swift = new Celebrity("Female", 33, "5foot11inches", 119, "Actor", "TS", "blonde", "White");
 
         // Add the celebrities to the ArrayList
-        addCelebrity(c1);
-        addCelebrity(c2);
-        addCelebrity(c3);
-        addCelebrity(c4);
-        addCelebrity(c5);
-        addCelebrity(c6);
-        addCelebrity(c7);
-        addCelebrity(c8);
-        addCelebrity(c9);
-        addCelebrity(c10);
+        addCelebrity(Lebron);
+        addCelebrity(Zion);
+        addCelebrity(Ja_Morant);
+        addCelebrity(Micheal_B_Jordan);
+        addCelebrity(Lil_Uzi_Vert);
+        addCelebrity(Chris_Pratt);
+        addCelebrity(DrPhill);
+        addCelebrity(Taylor_Swift);
+        
 
         int numMisses = 0;
         int maxMisses = 3;
