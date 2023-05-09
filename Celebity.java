@@ -1,7 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Celebity   {
+public class Celebrity   {
     
             
              
@@ -20,75 +20,24 @@ public class Celebity   {
             
 
 
-            public Celebity( String gender, int age, String height, int weight, String Profession,  String Initials, String haircolor, String skincolor){
+            public Celebrity( String gender, int age, String height, int weight, String Profession,  String Initials, String haircolor, String skincolor){
                 String [] array = {"Zion","Lebron" ,"Ja_Morant" ,"Micheal_B.Jordan" ,"Lil Uzi Vert" ,"Chris Pratt" ,"Dr.Phil", "SpongeBob","Taylor Swift","Frank_Sinatra" }; 
            
-            Celebity Lebron = new Celebity(gender("male"), age(38), height("6foot8inches"), weight(250), Profession("Basketballplayer"), Initials("LBJ"), haircolor("black"), skincolor("Black") );
-            Celebity Zion = new Celebity(gender("male"), age(22), height("6foot6inches"), weight(270), Profession("Basketballplayer"), Initials("ZW"), haircolor("black"), skincolor("Black") );
-            Celebity Ja_Morant = new Celebity(gender("male"), age(23), height("6foot2inches"), weight(183), Profession("Basketballplayer"), Initials("JM"), haircolor("black"), skincolor("Black") );
-            Celebity Micheal_B_Jordan = new Celebity(gender("male"), age(35), height("5foot11inches"), weight(175), Profession("Actor"), Initials("MJ"), haircolor("black"), skincolor("Black") );
-            Celebity Lil_Uzi_Vert = new Celebity(gender("male"), age(38), height("5foot4inches"), weight(150), Profession("Rapper"), Initials("LUV"), haircolor("Red"), skincolor("Black") );
-            Celebity Chris_Pratt = new Celebity(gender("male"), age(43), height("6foot2inches"), weight(185), Profession("Actor"), Initials("CP"), haircolor("blonde"), skincolor("White") );
-            Celebity DrPhill = new Celebity(gender("male"), age(72), height("6foot3inches"), weight(173), Profession("Media_Personality"), Initials("DP"), haircolor("grey"), skincolor("White") );
-            Celebity Taylor_Swift = new Celebity(gender("Female"), age(33), height("5foot11inches"), weight(119), Profession("Actor"), Initials("TS"), haircolor("blonde"), skincolor("White") );
+            Celebrity Lebron = new Celebrity("male", 38,"6foot8inches", 250, "Basketballplayer", "LBJ", "black", "Black");
+            Celebrity Zion = new Celebrity("male", 22, "6foot6inches", 270, "Basketballplayer", "ZW", "black", "Black");
+            Celebrity Ja_Morant = new Celebrity("male",23,"6foot2inches", 183, "Basketballplayer", "JM","black", "Black");
+            Celebrity Micheal_B_Jordan = new Celebrity("male",35, "5foot11inches", 175, "Actor", "MJ","black", "Black");
+            Celebrity Lil_Uzi_Vert = new Celebrity("male", 38, "5foot4inches", 150, "Rapper", "LUV", "Red", "Black" );
+            Celebrity Chris_Pratt = new Celebrity("male", 43, "6foot2inches", 185, "Actor", "CP", "blonde", "White");
+            Celebrity DrPhill = new Celebrity("male"),72, "6foot3inches", 173, "Media_Personality", "DP", "grey","White");
+            Celebrity Taylor_Swift = new Celebrity("Female", 33), "5foot11inches", 119, "Actor", "TS", "blonde", "White");
         }
          
 
 
         
-        private String skincolor(String string) {
-                return null;
-        }
+        
 
-
-
-
-        private String haircolor(String string) {
-                return null;
-        }
-
-
-
-
-        private String Initials(String string) {
-                return null;
-        }
-
-
-
-
-        private String Profession(String string) {
-                return null;
-        }
-
-
-
-
-        private int weight(int i) {
-                return 0;
-        }
-
-
-
-
-        private String height(String string) {
-                return null;
-        }
-
-
-
-
-        private int age(int i) {
-                return 0;
-        }
-
-
-
-
-        private String gender(String string) {
-                return null;
-        }
-            
            
 
         
