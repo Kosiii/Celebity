@@ -11,11 +11,14 @@ public class CelebrityGuessingGame {
     }
 
     public static void printCelebrityTraits(Celebrity c) {
-        System.out.println("Name: " + c.getName());
-        System.out.println("Hair Color: " + c.getHairColor());
+        System.out.println("Gender: " + c.getGender());
+        System.out.println("age: " + c.getAge());
+        System.out.println("Height: " + c.getHeight());
+        System.out.println("Weight: " + c.getWeight());
         System.out.println("Profession: " + c.getProfession());
-        System.out.println("Age: " + c.getAge());
-        System.out.println("Nationality: " + c.getNationality());
+        System.out.println("Initals: " + c.getInitals());
+        System.out.println("Hair_color: " + c.getHaircolor());
+        System.out.println("Skin_color: " + c.getSkincolor());
     }
 
     public static boolean isGuessCorrect(Celebrity c, String guess) {
