@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class CelebrityGuessingGame {
 
-    public static ArrayList<Celebrity> celebrities = new ArrayList<Celebrity>();
+    public static ArrayList<Celebrity> celebrity = new ArrayList<Celebrity>();
 
     public static void addCelebrity(Celebrity c) {
-        celebrities.add(c);
+        celebrity.add(c);
     }
 
     public static void printCelebrityTraits(Celebrity c) {
@@ -25,11 +25,6 @@ public class CelebrityGuessingGame {
         return guess.equalsIgnoreCase(c.getName());
     }
 
-    public static void submitAnswer(String answer) {
-        // Here you can implement any logic for submitting the answer
-        // such as checking if it matches any of the celebrities in the list
-    }
-
     public static void main(String[] args) {
         
       Celebrity Lebron = new Celebrity("male", 38,"6foot8inches", 250, "Basketballplayer", "LBJ", "black", "Black");
@@ -41,7 +36,7 @@ public class CelebrityGuessingGame {
             Celebrity DrPhill = new Celebrity("male",72, "6foot3inches", 173, "Media_Personality", "DP", "grey","White");
             Celebrity Taylor_Swift = new Celebrity("Female", 33, "5foot11inches", 119, "Actor", "TS", "blonde", "White");
 
-        // Add the celebrities to the ArrayList
+        
         addCelebrity(Lebron);
         addCelebrity(Zion);
         addCelebrity(Ja_Morant);
@@ -56,13 +51,40 @@ public class CelebrityGuessingGame {
         int maxMisses = 3;
         Scanner scanner = new Scanner(System.in);
 
-        while (numMisses < maxMisses) {
-            // Here you can implement the game logic
-            // such as prompting the user to guess a celebrity,
-            // checking if the guess is correct, and keeping track
-            // of the number of misses.
+        while (numMisses < maxMisses && !gameWon) {
+            
+            Celebrity randomCelebrity = getRandomCelebrity();
+
+           
+           
+            printTraits(randomCelebrity);
+
+            
+            String guess = getUserInput();
+
+            
+            if (checkGuess(randomCelebrity, guess)) {
+                System.out.println("Congratulations, you guessed the celebrity!");
+                gameWon = true;
+            } else {
+                System.out.println("Sorry, that is not the correct celebrity.");
+                numMisses++;
+                System.out.println("You have " + (maxMisses - numMisses) + " tries left.");
+            }
         }
 
-        scanner.close();
+        if (!gameWon) {
+            System.out.println("Sorry, you have run out of tries. Better luck next time!");
+        }
+
+        System.out.println("Thanks for playing Guess the Celebrity Game!");
     }
-}
+
+    
+    private static Celebrity getRandomCelebrity() {
+        int randomIndex = (int) (Math.random() * celebrity.size());
+        return celebrity.get(randomIndex);
+    }
+    private static String getUserInput() {
+        Scanner scanner = new Scanner(System.in);
+    }
