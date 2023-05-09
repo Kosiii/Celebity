@@ -29,8 +29,8 @@ public class Celebrity   {
             Celebrity Micheal_B_Jordan = new Celebrity("male",35, "5foot11inches", 175, "Actor", "MJ","black", "Black");
             Celebrity Lil_Uzi_Vert = new Celebrity("male", 38, "5foot4inches", 150, "Rapper", "LUV", "Red", "Black" );
             Celebrity Chris_Pratt = new Celebrity("male", 43, "6foot2inches", 185, "Actor", "CP", "blonde", "White");
-            Celebrity DrPhill = new Celebrity("male"),72, "6foot3inches", 173, "Media_Personality", "DP", "grey","White");
-            Celebrity Taylor_Swift = new Celebrity("Female", 33), "5foot11inches", 119, "Actor", "TS", "blonde", "White");
+            Celebrity DrPhill = new Celebrity("male",72, "6foot3inches", 173, "Media_Personality", "DP", "grey","White");
+            Celebrity Taylor_Swift = new Celebrity("Female", 33, "5foot11inches", 119, "Actor", "TS", "blonde", "White");
         }
          
 
