@@ -7,8 +7,7 @@ public class CelebrityGuessingGame {
     public static ArrayList<Celebrity> celebrity = new ArrayList<Celebrity>();
 
     public static void addCelebrity(Celebrity c) {
-        celebrity.add(c);
-    }
+        celebrity.add(c);     }
 
     public static void printCelebrityTraits(Celebrity c) {
         System.out.println("Gender: " + c.getGender());
