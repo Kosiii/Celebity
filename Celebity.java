@@ -5,7 +5,7 @@ public class Celebrity   {
     
             
              
-            
+           
             
           
             String gender;
